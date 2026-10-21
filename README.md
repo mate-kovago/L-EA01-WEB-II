@@ -1,120 +1,61 @@
-# L-EA01-WEB-II
-WEB-PROGRAMOZÁS II – Előadás Beadandó feladat - Laravel
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-A feladathoz segítséget a feladat végénél talál!
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Alakítsanak ki két-fős csoportokat és a feladatot közösen, projektmunkában oldják meg. A dokumentációban majd írják le, hogy a két főből ki melyik feladatrészt csinálta meg. 
-Kötelező csoportban dolgozni! (A Teams csoportban is írhatnak üzenetet egymásnak, hogy társat keresnek a feladathoz) Ha valaki nem talál társat így sem, akkor írjon a tanárnak üzenetet.
-Ha a csoportban páratlan számú hallgató készít beadandót, akkor a tanár egy főnek engedélyezi, hogy egyedül csinálja a feladatot. Ebben az esetben, ha meg akarja kapni a GitHub-os projektmunka feladatra is a pontot, akkor hozzon létre két GitHub fiókot és azokon valósítsa meg megoldást.
-A csoportmunka célja: a cégeknél is csoportban dolgoznak egy nagyobb feladaton, ezt gyakorolják itt is.
+## About Laravel
 
-A https://drive.google.com/drive/folders/12lDIxariOadDkGPaEssksPnL63lzYCbg?usp=sharing
-mappában találnak adatbázis forrásokat, amik közül kell egyet a csoportnak választani és felhasználni a feladatában. 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-A feladatban egy szerver oldali web-alkalmazást kell készíteni Laravel keretrendszerrel.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Az elkészítendő weboldalának témáját a választott adatbázishoz igazítsa. Forrásokat (képek, szövegek, …) gyűjtsön az Internetről.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Ha valamelyik Kötelező feladatot nem készíti el, akkor a megoldás 0 pontot ér.
+## Learning Laravel
 
-Összesen 25 pont 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-1.	Munkájához a következő feladat megoldását használja fel és azt fejlessze tovább (Kötelező!): 
-a Web-programozas-2-Előadás.pdf fájlból: AUTENTIKÁCIÓ fejezet megoldása
-(A megoldás-fájlokat megtalálja a Megoldasok.zip fájlban.)	
-2.	Keressen és alkalmazzon egy ingyenes reszponzív témát az oldalaihoz. 			(2 p)
-A dokumentációban írja le, hogy melyik témát választotta. 
-Ötleteket a dokumentum végén talál. 
-Használja a Dynamic layout design elveit az oldalaihoz
-Minden oldal aljára írja be a készítők nevét és Neptun kódját.
-3.	Autentikáció (Kötelező elem!)								(2 p)
-Regisztráció, Bejelentkezés, Kijelentkezés: 
-legalább „látogató”, „regisztrált látogató” és „admin” szerepkör el van különítve.
-Regisztrált látogató: az Üzenetek menünél van szerepe
-Admin: a CRUD menünél van szerepe
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-A nem-bejelentkezett felhasználó a következő menüpontokat látja: 
-Főoldal, Adatbázis, Kapcsolat, Diagram, Bejelentkezés, Regisztráció
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-4.	Főoldal menü: Az első oldalon mutassa be az alkalmazást egy látványos weboldalon	(1 p)	
-5.	Adatbázis menü: a választott adatbázisból jelenít meg adatokat				(3 p)
-Ehhez 3 tábla adatait használja fel az adatbázisból.
-Használjon ORM-et (Object-Relational Mapping) az adatbázis műveletekhez
-Használjon Migrációt és Seeding-et az adatbázishoz.
-6.	Kapcsolat menü: legyen egy kapcsolat űrlap, amelynek segítségével üzenetet 		(2 p)
-lehet küldeni az oldal tulajdonosa számára. 
-Használjon szerver oldali validációt az űrlaphoz.
-Az elküldött Űrlap adatokat mentse le az adatbázisba is. 
-7.	Üzenetek menü: Tegye lehetővé megtekinteni táblázatban az előző pontban		(2 p)
-elküldött üzeneteket az adatbázisból fordított időrend szerint (a legfrissebb 
-legyen elől). Írja minden üzenethez a küldés idejét.
-Ezt a menüt csak bejelentkezett felhasználó láthatja.
-8.	Diagram menu										(3 p)
-Készítsen egy oldalt diagrammal az adatbázis adatai alapján
-Használja a https://www.chartjs.org/ alkalmazást a diagramhoz.    
-9.	CRUD menü: Az oldalon valósítson meg egy CRUD (Create, Read, Update, Delete) 	(3 p)
-alkalmazást a választott adatbázis egyik táblájához. Ezt a menüt csak Admin láthatja.
-Mintát a dokumentum végén talál.
-10.	Alkalmazását töltse fel és valósítsa meg Internetes tárhelyen.				(2 p)
-(Kötelező elem! A működés ez alapján lesz javítva)	
-Bármelyik tárhelyszolgáltatót használhatja.
-11.	Használják a GitHub (github.com) verziókövető rendszert. 				(2 p)
-(Kötelező elem! A forrás ez alapján lesz javítva) 
-Ne csak a kész alkalmazást töltsék fel egy lépésben, hanem a részállapotokat is még 
-legalább 5 lépésben személyenként.
-Tegye nyilvánossá a GitHub fiókot, különben nem lehet értékelni a kódot.
-A GIT-en saját nevet válasszanak, ami alapján be lehet azonosítani, hogy ki mit töltött fel.
-12.	A GitHub-on a projektmunka módszert alkalmazzák: látszódjék, 			(3 p)
-hogy a csoport tagjai melyik részt készítették el.
-13.	Készítsen egy legalább 10 oldalas dokumentációt képernyőképekkel (Kötelező elem!), 	
-amiben bemutatja alkalmazását és leírja, hogy az előző pontok feladatait hogyan valósította meg. Fontos, hogy ez utóbbit leírja a dokumentációban, mert a feladat ez alapján lesz javítva. A dokumentációban adja meg a weboldal és a GitHub URL címét is és a belépési adatokat az FTP-hez és az adatbázishoz és az admin felhasználó belépési adatait.	
-Fájlnév formátum: Név-NeptunKód.pdf	pl. KovacsFerenc-ABC123.pdf	
+## Laravel Sponsors
 
-Be kell adni a Teams-en keresztül a dokumentációt. Csak a dokumentációt kell beadni, egyéb fájlokat nem! Akik közösen csinálják, mindenki adja be a dokumentációt.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-Segítség az egyes részekhez
+### Premium Partners
 
-Feladatrész	Fejezet a gyakorlati PDF fájlban
-ingyenes reszponzív téma	Keresőbe: 
-free responsive HTML CSS themes 
-free responsive HTML5 CSS3 templates
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
-Néhány ilyen oldal:
-https://html5up.net/
-https://themewagon.com/theme-tag/html5-css3/
-https://cssauthor.com/free-responsive-html5-css3-website-templates/
-https://webwave.me/free-website-templates
-https://themefisher.com/best-free-html5-templates 
+## Contributing
 
-Autentikáció	Autentikáció fejezetben ki van dolgozva
-CRUD menü	CRUD alkalmazás fejezet 
-Megvalósítás Internet-szolgáltatónál	Tarhely-hasznalat-Nethely-2025-03.docx
-Laravel projekt megvalósítása Internet-szolgáltatónál fejezet
-Github használat	GitHub-használat-grafikus módszerrel.docx
-GitHub-használat-parancssoros módszerrel.docx
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Minta a CRUD alkalmazáshoz:
- 
+## Code of Conduct
 
-Kiegészítő feladatok 
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-A következő feladatokkal plusz pontokat lehet szerezni a 25 pont felett.
+## Security Vulnerabilities
 
-Teszt menü 		+5 pont
-Készítsen egy alkalmazást űrlappal, aminek nehézsége hasonló, mint a Program Tesztelés fejezetben bemutatott 4 műveletes kalkulátor alkalmazás. 
-Készítsen az alkalmazáshoz Unit és Feature teszteket. A tesztek mennyisége legyen hasonló, mit a Program Tesztelés fejezetben bemutatott feladatnál.
-A dokumentációba tegyen képernyőképeket a teszt futtatásáról.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-React menü		+5 pont
-Válasszon a következő oldalról egy adatbázist:
-https://drive.google.com/drive/folders/12lDIxariOadDkGPaEssksPnL63lzYCbg?usp=sharing
-A választott adatbázis egyik táblájához készítsen egy CRUD alkalmazást, aminél a kliens oldalon React-ot használ Axios-al. (React-ot a Web-1 tantárgy előadásán tanultak)
-A React-nál a Build-eléses módszert használja, ne a Babel/standalone módszert.
+## License
 
-
- 					
-
-
-
-
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
