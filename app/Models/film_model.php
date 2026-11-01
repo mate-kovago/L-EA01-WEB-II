@@ -9,6 +9,7 @@ class film_model extends Model
 {
     //
     protected $table='film';
+    protected $fillable=['cim','gyartas', 'hossz', 'bemutato', 'youtube'];
 
     public function feladatok(): HasMany
     {
