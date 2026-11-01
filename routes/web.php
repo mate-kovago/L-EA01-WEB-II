@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Middleware\Auth2;
+use App\Http\Controllers\CRUDFilmController;
 
 Route::get('/', function () {return Inertia::render('welcome');})->name('home');
 
@@ -18,4 +19,5 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/filmek', 'App\Http\Controllers\FilmController@index');
+Route::resource('CRUD', CRUDFilmController::class);
 
